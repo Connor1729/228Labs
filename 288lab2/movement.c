@@ -1,19 +1,14 @@
-#include "movement.h";
 
-
-
-
-
-
+#include "movement.h"
 
 void Move_Forward(oi_t *sensor, int centimeters){
 
- bool dir;
+ //bool dir;
  double sum = 0;
  oi_setWheels(500, 500); // move forward; full speed
  while (sum < centimeters) {
      oi_update(sensor);
-     if(sensor->bumpLeft)
+     /*if(sensor->bumpLeft)
      {
         dir = false;
         move_back(sensor, dir);
@@ -24,7 +19,7 @@ void Move_Forward(oi_t *sensor, int centimeters){
          dir = true;
          move_back(sensor, dir);
          sum -= 15;
-     }
+     }*/
      sum += sensor->distance;
  }
  oi_setWheels(0, 0); // stop

@@ -16,7 +16,7 @@ int main(void) {
     //Move_Forward(sensor_data, 50);
    // turn_clockwise(sensor_data, 90);
     Move_Forward(sensor_data, 50);*/
-    Move_Forward(sensor_data, 50);
+    Move_Forward(sensor_data, 100);
     oi_free(sensor_data);
 
 
