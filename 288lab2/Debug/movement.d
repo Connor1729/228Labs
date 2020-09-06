@@ -1,6 +1,7 @@
 # FIXED
 
 movement.obj: ../movement.c
+movement.obj: ../movement.h
 movement.obj: C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include/stdio.h
 movement.obj: C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include/_ti_config.h
 movement.obj: C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include/linkage.h
@@ -26,6 +27,7 @@ movement.obj: C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/interrupt.h
 movement.obj: ../lcd.h
 
 ../movement.c: 
+../movement.h: 
 C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include/stdio.h: 
 C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include/_ti_config.h: 
 C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include/linkage.h: 
