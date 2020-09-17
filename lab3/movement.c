@@ -89,3 +89,28 @@ void move_back(oi_t *sensor, bool direction, double curSum, int curCent){ //fals
     Move_Forward(sensor, curCent, sumToReturn);
 }
 
+
+void Move_Backward(oi_t *sensor, int centimeters, double sum){
+
+ bool dir;
+ int distanceToTravel = centimeters * 10;
+ oi_setWheels(-500, -500); // move forward; full speed
+ while (sum < distanceToTravel) {
+     oi_update(sensor);
+     if(sensor->bumpLeft)
+     {
+        dir = false;
+        move_back(sensor, dir, sum, centimeters);
+     }
+     else if(sensor->bumpRight)
+     {
+         dir = true;
+         move_back(sensor, dir, sum, centimeters);
+     }
+     sum += sensor->distance;
+ }
+ oi_setWheels(0, 0); // stop
+
+
+ }
+

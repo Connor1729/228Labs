@@ -28,7 +28,7 @@ void button_init() {
 	}
 
 	// delete warning after implementing 
-	#warning "Unimplemented function: void button_init()"
+	//#warning "Unimplemented function: void button_init()"
 	
 	// Reading: To initialize and configure GPIO PORTE, visit pg. 656 in the 
 	// Tiva datasheet.
@@ -40,14 +40,14 @@ void button_init() {
 	// listed below. You will learn more about additional steps in a later lab.
 
 	// 1) Turn on PORTE system clock, do not modify other clock enables
-	//SYSCTL_RCGCGPIO_R |=
+	SYSCTL_RCGCGPIO_R |= 0b010000;
 
 	// 2) Set the buttons as inputs, do not modify other PORTE wires
-	// GPIO_PORTE_DIR_R &=
+	GPIO_PORTE_DIR_R &= 0b00000000; //663
 	
 	// 3) Enable digital functionality for button inputs, 
 	//    do not modify other PORTE enables
-	//GPIO_PORTE_DEN_R |=
+	GPIO_PORTE_DEN_R |= 0xFF;
 
 	
 	initialized = 1;
@@ -61,7 +61,7 @@ void button_init() {
  */
 uint8_t button_getButton() {
 
-	#warning "Unimplemented function: uint8_t button_getButton(void)"	// delete warning after implementing
+	//#warning "Unimplemented function: uint8_t button_getButton(void)"	// delete warning after implementing
 
 	//
 	// DELETE ME - How bitmasking works
@@ -97,6 +97,26 @@ uint8_t button_getButton() {
 	// TODO: Write code below -- Return the left must button position pressed
 	
 	// INSERT CODE HERE!
+
+    if((GPIO_PORTE_DATA_R & 0b00001000) == 0b00000000) //S4 is pushed
+    {
+        return 4; //finish
+    }
+
+    if((GPIO_PORTE_DATA_R & 0b00000100) == 0b00000000) //S3 is pushed
+    {
+        return 3;
+    }
+
+    if((GPIO_PORTE_DATA_R & 0b00000010) == 0b00000000) //S2 is pushed
+    {
+        return 2; //finish
+    }
+
+    if((GPIO_PORTE_DATA_R & 0b00000001) == 0b00000000) //S1 is pushed
+    {
+        return 1; //finish
+    }
 	
 	return 0; // EDIT ME
 }
