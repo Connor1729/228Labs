@@ -59,8 +59,8 @@ int main(void) {
 
     while(true)
     {
-        int i = cyBot_getByte();
-        char curChar = i;//cyBot_getByte();
+        int curChar = cyBot_getByte();
+       // char curChar = i;//cyBot_getByte();
         //int curChar = cyBot_getByte();
         if(curChar == 'w')
         {
