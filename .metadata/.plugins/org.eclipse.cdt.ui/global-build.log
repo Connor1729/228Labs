@@ -8897,3 +8897,947 @@ Finished building target: "lab_6.out"
  
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project lab_6 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../lab6main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/lab_6" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lab6main.d_raw"  "../lab6main.c"
+"../lab6main.c", line 104: warning #225-D: function "sendString" declared implicitly
+"../lab6main.c", line 67: warning #179-D: variable "s1" was declared but never referenced
+"../lab6main.c", line 192: warning #161-D: declaration is incompatible with previous "sendString" (declared at line 104)
+Finished building: "../lab6main.c"
+ 
+Building target: "lab_6.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab_6.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab_6_linkInfo.xml" --rom_model -o "lab_6.out" "./Timer.obj" "./button.obj" "./lab6main.obj" "./lcd.obj" "./movement.obj" "./open_interface.obj" "./resetSimulation.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "lab_6.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_6 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'lab_6.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_6 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../lab6main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/lab_6" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lab6main.d_raw"  "../lab6main.c"
+"../lab6main.c", line 104: warning #225-D: function "sendString" declared implicitly
+"../lab6main.c", line 67: warning #179-D: variable "s1" was declared but never referenced
+"../lab6main.c", line 192: warning #161-D: declaration is incompatible with previous "sendString" (declared at line 104)
+Finished building: "../lab6main.c"
+ 
+Building target: "lab_6.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab_6.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab_6_linkInfo.xml" --rom_model -o "lab_6.out" "./Timer.obj" "./button.obj" "./lab6main.obj" "./lcd.obj" "./movement.obj" "./open_interface.obj" "./resetSimulation.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "lab_6.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_6 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'lab_6.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_6 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../lab6main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/lab_6" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lab6main.d_raw"  "../lab6main.c"
+"../lab6main.c", line 104: warning #225-D: function "sendString" declared implicitly
+"../lab6main.c", line 67: warning #179-D: variable "s1" was declared but never referenced
+"../lab6main.c", line 193: warning #161-D: declaration is incompatible with previous "sendString" (declared at line 104)
+Finished building: "../lab6main.c"
+ 
+Building target: "lab_6.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab_6.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab_6_linkInfo.xml" --rom_model -o "lab_6.out" "./Timer.obj" "./button.obj" "./lab6main.obj" "./lcd.obj" "./movement.obj" "./open_interface.obj" "./resetSimulation.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "lab_6.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_6 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'lab_6.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_6 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'lab_6.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_6 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'lab_6.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_6 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../lab6main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/lab_6" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lab6main.d_raw"  "../lab6main.c"
+"../lab6main.c", line 104: warning #225-D: function "sendString" declared implicitly
+"../lab6main.c", line 67: warning #179-D: variable "s1" was declared but never referenced
+"../lab6main.c", line 188: warning #161-D: declaration is incompatible with previous "sendString" (declared at line 104)
+Finished building: "../lab6main.c"
+ 
+Building target: "lab_6.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab_6.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab_6_linkInfo.xml" --rom_model -o "lab_6.out" "./Timer.obj" "./button.obj" "./lab6main.obj" "./lcd.obj" "./movement.obj" "./open_interface.obj" "./resetSimulation.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "lab_6.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_6 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'lab_6.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_6 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../lab6main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/lab_6" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lab6main.d_raw"  "../lab6main.c"
+"../lab6main.c", line 104: warning #225-D: function "sendString" declared implicitly
+"../lab6main.c", line 67: warning #179-D: variable "s1" was declared but never referenced
+"../lab6main.c", line 188: warning #161-D: declaration is incompatible with previous "sendString" (declared at line 104)
+Finished building: "../lab6main.c"
+ 
+Building target: "lab_6.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab_6.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab_6_linkInfo.xml" --rom_model -o "lab_6.out" "./Timer.obj" "./button.obj" "./lab6main.obj" "./lcd.obj" "./movement.obj" "./open_interface.obj" "./resetSimulation.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "lab_6.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_6 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'lab_6.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_6 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../lab6main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/lab_6" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lab6main.d_raw"  "../lab6main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'lab6main.obj' failed
+"../lab6main.c", line 104: warning #225-D: function "sendString" declared implicitly
+"../lab6main.c", line 137: error #76: operand of "*" must be a pointer
+"../lab6main.c", line 67: warning #179-D: variable "s1" was declared but never referenced
+"../lab6main.c", line 188: warning #161-D: declaration is incompatible with previous "sendString" (declared at line 104)
+1 error detected in the compilation of "../lab6main.c".
+gmake: *** [lab6main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_6 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../lab6main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/lab_6" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lab6main.d_raw"  "../lab6main.c"
+"../lab6main.c", line 104: warning #225-D: function "sendString" declared implicitly
+"../lab6main.c", line 67: warning #179-D: variable "s1" was declared but never referenced
+"../lab6main.c", line 188: warning #161-D: declaration is incompatible with previous "sendString" (declared at line 104)
+Finished building: "../lab6main.c"
+ 
+Building target: "lab_6.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab_6.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab_6_linkInfo.xml" --rom_model -o "lab_6.out" "./Timer.obj" "./button.obj" "./lab6main.obj" "./lcd.obj" "./movement.obj" "./open_interface.obj" "./resetSimulation.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "lab_6.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_6 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'lab_6.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_6 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'lab_6.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_6 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'lab_6.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_6 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'lab_6.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_6 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'lab_6.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_7 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../adc.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/lab_7" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="adc.d_raw"  "../adc.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'adc.obj' failed
+"../adc.c", line 13: error #20: identifier "SYSCTL_RCGCADC_R" is undefined
+"../adc.c", line 14: error #20: identifier "SYSCTL_RCGCGPIO_R" is undefined
+"../adc.c", line 15: error #20: identifier "GPIO_PORTB_ASFEL" is undefined
+"../adc.c", line 16: error #20: identifier "GPIO_PORTB_DEN" is undefined
+"../adc.c", line 17: error #20: identifier "GPIO_PORTB_AMSEL" is undefined
+"../adc.c", line 18: error #20: identifier "SYSCTL_ADCACTSS_R" is undefined
+"../adc.c", line 19: error #20: identifier "SYSCTL_ADCEMUX_R" is undefined
+"../adc.c", line 19: error #19: extra text after expected end of number
+"../adc.c", line 20: error #20: identifier "SYSCTL_ADCSSMUX0_R" is undefined
+"../adc.c", line 21: error #20: identifier "SYSCTL_ADCSSCTL0_R" is undefined
+"../adc.c", line 22: error #20: identifier "SYSCYL_ADCACTSS_R" is undefined
+"../adc.c", line 33: warning #994-D: missing return statement at end of non-void function "adc_read"
+11 errors detected in the compilation of "../adc.c".
+gmake: *** [adc.obj] Error 1
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/lab_7" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 8: warning #225-D: function "adc_init" declared implicitly
+"../main.c", line 9: warning #225-D: function "lcd_init" declared implicitly
+"../main.c", line 13: warning #225-D: function "lcd_puts" declared implicitly
+"../main.c", line 13: warning #225-D: function "adc_read" declared implicitly
+"../main.c", line 14: warning #225-D: function "wait" declared implicitly
+"../main.c", line 22: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building file: "../tm4c123gh6pm_startup_ccs.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/lab_7" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="tm4c123gh6pm_startup_ccs.d_raw"  "../tm4c123gh6pm_startup_ccs.c"
+Finished building: "../tm4c123gh6pm_startup_ccs.c"
+ 
+Building file: "../Timer.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/lab_7" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="Timer.d_raw"  "../Timer.c"
+Finished building: "../Timer.c"
+ 
+Building file: "../lcd.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/lab_7" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lcd.d_raw"  "../lcd.c"
+Finished building: "../lcd.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_7 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/lab_7" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 1: fatal error #13: expected a file name
+1 catastrophic error detected in the compilation of "../main.c".
+Compilation terminated.
+gmake: *** [main.obj] Error 1
+Building file: "../adc.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/lab_7" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="adc.d_raw"  "../adc.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'adc.obj' failed
+"../adc.c", line 13: error #20: identifier "SYSCTL_RCGCADC_R" is undefined
+"../adc.c", line 14: error #20: identifier "SYSCTL_RCGCGPIO_R" is undefined
+"../adc.c", line 15: error #20: identifier "GPIO_PORTB_ASFEL" is undefined
+"../adc.c", line 16: error #20: identifier "GPIO_PORTB_DEN" is undefined
+"../adc.c", line 17: error #20: identifier "GPIO_PORTB_AMSEL" is undefined
+"../adc.c", line 18: error #20: identifier "SYSCTL_ADCACTSS_R" is undefined
+"../adc.c", line 19: error #20: identifier "SYSCTL_ADCEMUX_R" is undefined
+"../adc.c", line 19: error #19: extra text after expected end of number
+"../adc.c", line 20: error #20: identifier "SYSCTL_ADCSSMUX0_R" is undefined
+"../adc.c", line 21: error #20: identifier "SYSCTL_ADCSSCTL0_R" is undefined
+"../adc.c", line 22: error #20: identifier "SYSCYL_ADCACTSS_R" is undefined
+"../adc.c", line 33: warning #994-D: missing return statement at end of non-void function "adc_read"
+11 errors detected in the compilation of "../adc.c".
+gmake: *** [adc.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_7 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../adc.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/lab_7" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="adc.d_raw"  "../adc.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'adc.obj' failed
+"../adc.c", line 13: error #20: identifier "SYSCTL_RCGCADC_R" is undefined
+"../adc.c", line 14: error #20: identifier "SYSCTL_RCGCGPIO_R" is undefined
+"../adc.c", line 15: error #20: identifier "GPIO_PORTB_ASFEL" is undefined
+"../adc.c", line 16: error #20: identifier "GPIO_PORTB_DEN" is undefined
+"../adc.c", line 17: error #20: identifier "GPIO_PORTB_AMSEL" is undefined
+"../adc.c", line 18: error #20: identifier "SYSCTL_ADCACTSS_R" is undefined
+"../adc.c", line 19: error #20: identifier "SYSCTL_ADCEMUX_R" is undefined
+"../adc.c", line 19: error #19: extra text after expected end of number
+"../adc.c", line 20: error #20: identifier "SYSCTL_ADCSSMUX0_R" is undefined
+"../adc.c", line 21: error #20: identifier "SYSCTL_ADCSSCTL0_R" is undefined
+"../adc.c", line 22: error #20: identifier "SYSCYL_ADCACTSS_R" is undefined
+11 errors detected in the compilation of "../adc.c".
+gmake: *** [adc.obj] Error 1
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/lab_7" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 1: fatal error #13: expected a file name
+1 catastrophic error detected in the compilation of "../main.c".
+Compilation terminated.
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_7 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../adc.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/lab_7" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="adc.d_raw"  "../adc.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'adc.obj' failed
+"../adc.c", line 13: error #20: identifier "SYSCTL_RCGCADC_R" is undefined
+"../adc.c", line 14: error #20: identifier "SYSCTL_RCGCGPIO_R" is undefined
+"../adc.c", line 15: error #20: identifier "GPIO_PORTB_ASFEL" is undefined
+"../adc.c", line 16: error #20: identifier "GPIO_PORTB_DEN" is undefined
+"../adc.c", line 17: error #20: identifier "GPIO_PORTB_AMSEL" is undefined
+"../adc.c", line 18: error #20: identifier "SYSCTL_ADCACTSS_R" is undefined
+"../adc.c", line 19: error #20: identifier "SYSCTL_ADCEMUX_R" is undefined
+"../adc.c", line 19: error #19: extra text after expected end of number
+"../adc.c", line 20: error #20: identifier "SYSCTL_ADCSSMUX0_R" is undefined
+"../adc.c", line 21: error #20: identifier "SYSCTL_ADCSSCTL0_R" is undefined
+"../adc.c", line 22: error #20: identifier "SYSCYL_ADCACTSS_R" is undefined
+11 errors detected in the compilation of "../adc.c".
+gmake: *** [adc.obj] Error 1
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/lab_7" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 14: warning #169-D: argument of type "int" is incompatible with parameter of type "char *"
+"../main.c", line 15: warning #225-D: function "wait" declared implicitly
+"../main.c", line 23: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_7 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../adc.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/lab_7" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="adc.d_raw"  "../adc.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'adc.obj' failed
+"../adc.c", line 13: error #20: identifier "SYSCTL_RCGCADC_R" is undefined
+"../adc.c", line 14: error #20: identifier "SYSCTL_RCGCGPIO_R" is undefined
+"../adc.c", line 15: error #20: identifier "GPIO_PORTB_ASFEL" is undefined
+"../adc.c", line 16: error #20: identifier "GPIO_PORTB_DEN" is undefined
+"../adc.c", line 17: error #20: identifier "GPIO_PORTB_AMSEL" is undefined
+"../adc.c", line 18: error #20: identifier "SYSCTL_ADCACTSS_R" is undefined
+"../adc.c", line 19: error #20: identifier "SYSCTL_ADCEMUX_R" is undefined
+"../adc.c", line 19: error #19: extra text after expected end of number
+"../adc.c", line 20: error #20: identifier "SYSCTL_ADCSSMUX0_R" is undefined
+"../adc.c", line 21: error #20: identifier "SYSCTL_ADCSSCTL0_R" is undefined
+"../adc.c", line 22: error #20: identifier "SYSCYL_ADCACTSS_R" is undefined
+11 errors detected in the compilation of "../adc.c".
+gmake: *** [adc.obj] Error 1
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/lab_7" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 15: warning #225-D: function "wait" declared implicitly
+"../main.c", line 23: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_7 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../adc.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/lab_7" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="adc.d_raw"  "../adc.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'adc.obj' failed
+"../adc.c", line 13: error #20: identifier "SYSCTL_RCGCADC_R" is undefined
+"../adc.c", line 14: error #20: identifier "SYSCTL_RCGCGPIO_R" is undefined
+"../adc.c", line 15: error #20: identifier "GPIO_PORTB_ASFEL" is undefined
+"../adc.c", line 16: error #20: identifier "GPIO_PORTB_DEN" is undefined
+"../adc.c", line 17: error #20: identifier "GPIO_PORTB_AMSEL" is undefined
+"../adc.c", line 18: error #20: identifier "SYSCTL_ADCACTSS_R" is undefined
+"../adc.c", line 19: error #20: identifier "SYSCTL_ADCEMUX_R" is undefined
+"../adc.c", line 19: error #19: extra text after expected end of number
+"../adc.c", line 20: error #20: identifier "SYSCTL_ADCSSMUX0_R" is undefined
+"../adc.c", line 21: error #20: identifier "SYSCTL_ADCSSCTL0_R" is undefined
+"../adc.c", line 22: error #20: identifier "SYSCYL_ADCACTSS_R" is undefined
+11 errors detected in the compilation of "../adc.c".
+gmake: *** [adc.obj] Error 1
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/lab_7" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 25: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_7 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../adc.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/lab_7" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="adc.d_raw"  "../adc.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'adc.obj' failed
+"../adc.c", line 13: error #20: identifier "SYSCTL_RCGCADC_R" is undefined
+"../adc.c", line 14: error #20: identifier "SYSCTL_RCGCGPIO_R" is undefined
+"../adc.c", line 15: error #20: identifier "GPIO_PORTB_ASFEL" is undefined
+"../adc.c", line 16: error #20: identifier "GPIO_PORTB_DEN" is undefined
+"../adc.c", line 17: error #20: identifier "GPIO_PORTB_AMSEL" is undefined
+"../adc.c", line 18: error #20: identifier "SYSCTL_ADCACTSS_R" is undefined
+"../adc.c", line 19: error #20: identifier "SYSCTL_ADCEMUX_R" is undefined
+"../adc.c", line 19: error #19: extra text after expected end of number
+"../adc.c", line 20: error #20: identifier "SYSCTL_ADCSSMUX0_R" is undefined
+"../adc.c", line 21: error #20: identifier "SYSCTL_ADCSSCTL0_R" is undefined
+"../adc.c", line 22: error #20: identifier "SYSCYL_ADCACTSS_R" is undefined
+11 errors detected in the compilation of "../adc.c".
+gmake: *** [adc.obj] Error 1
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/lab_7" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_7 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../adc.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/lab_7" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="adc.d_raw"  "../adc.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'adc.obj' failed
+"../adc.c", line 13: error #20: identifier "SYSCTL_RCGCADC_R" is undefined
+"../adc.c", line 14: error #20: identifier "SYSCTL_RCGCGPIO_R" is undefined
+"../adc.c", line 15: error #20: identifier "GPIO_PORTB_ASFEL" is undefined
+"../adc.c", line 16: error #20: identifier "GPIO_PORTB_DEN" is undefined
+"../adc.c", line 17: error #20: identifier "GPIO_PORTB_AMSEL" is undefined
+"../adc.c", line 18: error #20: identifier "SYSCTL_ADCACTSS_R" is undefined
+"../adc.c", line 19: error #20: identifier "SYSCTL_ADCEMUX_R" is undefined
+"../adc.c", line 19: error #19: extra text after expected end of number
+"../adc.c", line 20: error #20: identifier "SYSCTL_ADCSSMUX0_R" is undefined
+"../adc.c", line 21: error #20: identifier "SYSCTL_ADCSSCTL0_R" is undefined
+"../adc.c", line 22: error #20: identifier "SYSCYL_ADCACTSS_R" is undefined
+11 errors detected in the compilation of "../adc.c".
+gmake: *** [adc.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_7 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../adc.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/lab_7" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="adc.d_raw"  "../adc.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'adc.obj' failed
+"../adc.c", line 7: fatal error #13: expected a file name
+1 catastrophic error detected in the compilation of "../adc.c".
+Compilation terminated.
+gmake: *** [adc.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_7 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../adc.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/lab_7" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="adc.d_raw"  "../adc.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'adc.obj' failed
+"../adc.c", line 13: error #20: identifier "SYSCTL_RCGCADC_R" is undefined
+"../adc.c", line 14: error #20: identifier "SYSCTL_RCGCGPIO_R" is undefined
+"../adc.c", line 15: error #20: identifier "GPIO_PORTB_ASFEL" is undefined
+"../adc.c", line 16: error #20: identifier "GPIO_PORTB_DEN" is undefined
+"../adc.c", line 17: error #20: identifier "GPIO_PORTB_AMSEL" is undefined
+"../adc.c", line 18: error #20: identifier "SYSCTL_ADCACTSS_R" is undefined
+"../adc.c", line 19: error #20: identifier "SYSCTL_ADCEMUX_R" is undefined
+"../adc.c", line 19: error #19: extra text after expected end of number
+"../adc.c", line 20: error #20: identifier "SYSCTL_ADCSSMUX0_R" is undefined
+"../adc.c", line 21: error #20: identifier "SYSCTL_ADCSSCTL0_R" is undefined
+"../adc.c", line 22: error #20: identifier "SYSCYL_ADCACTSS_R" is undefined
+11 errors detected in the compilation of "../adc.c".
+gmake: *** [adc.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_7 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../adc.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/lab_7" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="adc.d_raw"  "../adc.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'adc.obj' failed
+"../adc.c", line 16: error #20: identifier "GPIO_PORTB_ASFEL" is undefined
+"../adc.c", line 17: error #20: identifier "GPIO_PORTB_DEN" is undefined
+"../adc.c", line 18: error #20: identifier "GPIO_PORTB_AMSEL" is undefined
+"../adc.c", line 19: error #20: identifier "SYSCTL_ADCACTSS_R" is undefined
+"../adc.c", line 20: error #20: identifier "SYSCTL_ADCEMUX_R" is undefined
+"../adc.c", line 20: error #19: extra text after expected end of number
+"../adc.c", line 21: error #20: identifier "SYSCTL_ADCSSMUX0_R" is undefined
+"../adc.c", line 22: error #20: identifier "SYSCTL_ADCSSCTL0_R" is undefined
+"../adc.c", line 23: error #20: identifier "SYSCYL_ADCACTSS_R" is undefined
+9 errors detected in the compilation of "../adc.c".
+gmake: *** [adc.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_7 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../adc.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/lab_7" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="adc.d_raw"  "../adc.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'adc.obj' failed
+"../adc.c", line 16: error #20: identifier "GPIO_PORTB_ASFEL" is undefined
+"../adc.c", line 17: error #20: identifier "GPIO_PORTB_DEN" is undefined
+"../adc.c", line 18: error #20: identifier "GPIO_PORTB_AMSEL" is undefined
+"../adc.c", line 19: error #20: identifier "SYSCTL_ADCACTSS_R" is undefined
+"../adc.c", line 20: error #20: identifier "SYSCTL_ADCEMUX_R" is undefined
+"../adc.c", line 20: error #19: extra text after expected end of number
+"../adc.c", line 21: error #20: identifier "SYSCTL_ADCSSMUX0_R" is undefined
+"../adc.c", line 22: error #20: identifier "SYSCTL_ADCSSCTL0_R" is undefined
+"../adc.c", line 23: error #20: identifier "SYSCYL_ADCACTSS_R" is undefined
+9 errors detected in the compilation of "../adc.c".
+gmake: *** [adc.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_7 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../adc.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/lab_7" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="adc.d_raw"  "../adc.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'adc.obj' failed
+"../adc.c", line 16: error #20: identifier "GPIO_PORTB_ASFEL" is undefined
+"../adc.c", line 17: error #20: identifier "GPIO_PORTB_DEN" is undefined
+"../adc.c", line 18: error #20: identifier "GPIO_PORTB_AMSEL" is undefined
+"../adc.c", line 19: error #20: identifier "SYSCTL_ADCACTSS_R" is undefined
+"../adc.c", line 20: error #20: identifier "SYSCTL_ADCEMUX_R" is undefined
+"../adc.c", line 20: error #19: extra text after expected end of number
+"../adc.c", line 21: error #20: identifier "SYSCTL_ADCSSMUX0_R" is undefined
+"../adc.c", line 22: error #20: identifier "SYSCTL_ADCSSCTL0_R" is undefined
+"../adc.c", line 23: error #20: identifier "SYSCYL_ADCACTSS_R" is undefined
+9 errors detected in the compilation of "../adc.c".
+gmake: *** [adc.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_7 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../adc.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/lab_7" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="adc.d_raw"  "../adc.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'adc.obj' failed
+"../adc.c", line 16: error #20: identifier "GPIO_PORTB_ASFEL" is undefined
+"../adc.c", line 17: error #20: identifier "GPIO_PORTB_DEN" is undefined
+"../adc.c", line 18: error #20: identifier "GPIO_PORTB_AMSEL" is undefined
+"../adc.c", line 19: error #20: identifier "SYSCTL_ADCACTSS_R" is undefined
+"../adc.c", line 20: error #20: identifier "SYSCTL_ADCEMUX_R" is undefined
+"../adc.c", line 20: error #19: extra text after expected end of number
+"../adc.c", line 21: error #20: identifier "SYSCTL_ADCSSMUX0_R" is undefined
+"../adc.c", line 22: error #20: identifier "SYSCTL_ADCSSCTL0_R" is undefined
+"../adc.c", line 23: error #20: identifier "SYSCYL_ADCACTSS_R" is undefined
+"../adc.c", line 37: warning #994-D: missing return statement at end of non-void function "adc_read"
+9 errors detected in the compilation of "../adc.c".
+gmake: *** [adc.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_7 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../adc.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/lab_7" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="adc.d_raw"  "../adc.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'adc.obj' failed
+"../adc.c", line 16: error #20: identifier "GPIO_PORTB_ASFEL" is undefined
+"../adc.c", line 17: error #20: identifier "GPIO_PORTB_DEN" is undefined
+"../adc.c", line 18: error #20: identifier "GPIO_PORTB_AMSEL" is undefined
+"../adc.c", line 19: error #20: identifier "SYSCTL_ADCACTSS_R" is undefined
+"../adc.c", line 20: error #20: identifier "SYSCTL_ADCEMUX_R" is undefined
+"../adc.c", line 20: error #19: extra text after expected end of number
+"../adc.c", line 21: error #20: identifier "SYSCTL_ADCSSMUX0_R" is undefined
+"../adc.c", line 22: error #20: identifier "SYSCTL_ADCSSCTL0_R" is undefined
+"../adc.c", line 23: error #20: identifier "SYSCYL_ADCACTSS_R" is undefined
+9 errors detected in the compilation of "../adc.c".
+gmake: *** [adc.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_7 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../adc.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/lab_7" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="adc.d_raw"  "../adc.c"
+Finished building: "../adc.c"
+ 
+Building target: "lab_7.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab_7.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab_7_linkInfo.xml" --rom_model -o "lab_7.out" "./Timer.obj" "./adc.obj" "./lcd.obj" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "lab_7.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_7 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../adc.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/lab_7" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="adc.d_raw"  "../adc.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'adc.obj' failed
+"../adc.c", line 16: error #20: identifier "GPIO_PORTB_ASFEL" is undefined
+"../adc.c", line 17: error #20: identifier "GPIO_PORTB_DEN" is undefined
+"../adc.c", line 18: error #20: identifier "GPIO_PORTB_AMSEL" is undefined
+"../adc.c", line 19: error #20: identifier "SYSCTL_ADCACTSS_R" is undefined
+"../adc.c", line 20: error #20: identifier "SYSCTL_ADCEMUX" is undefined
+"../adc.c", line 20: error #19: extra text after expected end of number
+"../adc.c", line 21: error #20: identifier "SYSCTL_ADCSSMUX0_R" is undefined
+"../adc.c", line 22: error #20: identifier "SYSCTL_ADCSSCTL0_R" is undefined
+"../adc.c", line 23: error #20: identifier "SYSCYL_ADCACTSS_R" is undefined
+9 errors detected in the compilation of "../adc.c".
+gmake: *** [adc.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_7 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../adc.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/lab_7" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="adc.d_raw"  "../adc.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'adc.obj' failed
+"../adc.c", line 16: error #20: identifier "GPIO_PORTB_ASFEL" is undefined
+"../adc.c", line 17: error #20: identifier "GPIO_PORTB_DEN" is undefined
+"../adc.c", line 18: error #20: identifier "GPIO_PORTB_AMSEL" is undefined
+"../adc.c", line 19: error #20: identifier "SYSCTL_ADCACTSS_R" is undefined
+"../adc.c", line 20: error #20: identifier "SYSCTL_ADCEMUX_R" is undefined
+"../adc.c", line 20: error #19: extra text after expected end of number
+"../adc.c", line 21: error #20: identifier "SYSCTL_ADCSSMUX0_R" is undefined
+"../adc.c", line 22: error #20: identifier "SYSCTL_ADCSSCTL0_R" is undefined
+"../adc.c", line 23: error #20: identifier "SYSCYL_ADCACTSS_R" is undefined
+9 errors detected in the compilation of "../adc.c".
+gmake: *** [adc.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_7 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../adc.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/lab_7" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="adc.d_raw"  "../adc.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'adc.obj' failed
+"../adc.c", line 16: error #20: identifier "GPIO_PORTB_ASFEL" is undefined
+"../adc.c", line 17: error #20: identifier "GPIO_PORTB_DEN" is undefined
+"../adc.c", line 18: error #20: identifier "GPIO_PORTB_AMSEL" is undefined
+"../adc.c", line 19: error #20: identifier "SYSCTL_ADCACTSS_R" is undefined
+"../adc.c", line 20: error #20: identifier "SYSCTL_ADCEMUX_R" is undefined
+"../adc.c", line 20: error #19: extra text after expected end of number
+"../adc.c", line 21: error #20: identifier "SYSCTL_ADCSSMUX0_R" is undefined
+"../adc.c", line 22: error #20: identifier "SYSCTL_ADCSSCTL0_R" is undefined
+"../adc.c", line 23: error #20: identifier "SYSCYL_ADCACTSS_R" is undefined
+9 errors detected in the compilation of "../adc.c".
+gmake: *** [adc.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_7 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../adc.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/lab_7" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="adc.d_raw"  "../adc.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'adc.obj' failed
+"../adc.c", line 17: error #20: identifier "GPIO_PORTB_DEN" is undefined
+"../adc.c", line 18: error #20: identifier "GPIO_PORTB_AMSEL" is undefined
+"../adc.c", line 19: error #20: identifier "SYSCTL_ADCACTSS_R" is undefined
+"../adc.c", line 20: error #20: identifier "SYSCTL_ADCEMUX_R" is undefined
+"../adc.c", line 20: error #19: extra text after expected end of number
+"../adc.c", line 21: error #20: identifier "SYSCTL_ADCSSMUX0_R" is undefined
+"../adc.c", line 22: error #20: identifier "SYSCTL_ADCSSCTL0_R" is undefined
+"../adc.c", line 23: error #20: identifier "SYSCYL_ADCACTSS_R" is undefined
+8 errors detected in the compilation of "../adc.c".
+gmake: *** [adc.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_7 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../adc.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/lab_7" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="adc.d_raw"  "../adc.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'adc.obj' failed
+"../adc.c", line 20: error #20: identifier "SYSCTL_ADCEMUX_R" is undefined
+"../adc.c", line 20: error #19: extra text after expected end of number
+"../adc.c", line 21: error #20: identifier "SYSCTL_ADCSSMUX0_R" is undefined
+"../adc.c", line 22: error #20: identifier "SYSCTL_ADCSSCTL0_R" is undefined
+"../adc.c", line 23: error #20: identifier "SYSCYL_ADCACTSS_R" is undefined
+5 errors detected in the compilation of "../adc.c".
+gmake: *** [adc.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_7 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../adc.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/lab_7" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="adc.d_raw"  "../adc.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'adc.obj' failed
+"../adc.c", line 20: error #19: extra text after expected end of number
+1 error detected in the compilation of "../adc.c".
+gmake: *** [adc.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_7 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../adc.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/lab_7" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="adc.d_raw"  "../adc.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'adc.obj' failed
+"../adc.c", line 20: error #19: extra text after expected end of number
+1 error detected in the compilation of "../adc.c".
+gmake: *** [adc.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_7 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../adc.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/lab_7" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="adc.d_raw"  "../adc.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'adc.obj' failed
+"../adc.c", line 20: error #19: extra text after expected end of number
+1 error detected in the compilation of "../adc.c".
+gmake: *** [adc.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_7 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../adc.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/lab_7" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="adc.d_raw"  "../adc.c"
+Finished building: "../adc.c"
+ 
+Building target: "lab_7.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab_7.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab_7_linkInfo.xml" --rom_model -o "lab_7.out" "./Timer.obj" "./adc.obj" "./lcd.obj" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "lab_7.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_7 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../adc.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/lab_7" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="adc.d_raw"  "../adc.c"
+Finished building: "../adc.c"
+ 
+Building target: "lab_7.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab_7.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab_7_linkInfo.xml" --rom_model -o "lab_7.out" "./Timer.obj" "./adc.obj" "./lcd.obj" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "lab_7.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_7 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'lab_7.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_7 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'lab_7.out' is up to date.
+
+**** Build Finished ****

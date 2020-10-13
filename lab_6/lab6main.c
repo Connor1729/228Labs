@@ -76,7 +76,7 @@ int main(void) {
 	int i;
 	cyBOT_Scan_t x;
 	//stringToSend = "Angle" + '\t' + "PING distance" + '\t' + "IR Raw Value";
-	char stringToSend[100];
+	char stringToSend[200];
 
 	float curDist = 0;
 
@@ -89,10 +89,10 @@ int main(void) {
 
 
 	struct cybotObject scanObjs[10];
-	int objCount = 0;
-	int cwidth = 0;
-	int ccurpdistance = 0;
-	int cangle = 0;
+	volatile int objCount = 0;
+	volatile int cwidth = 0;
+	volatile int ccurpdistance = 0;
+	volatile int cangle = 0;
 
 	//int curWidth = 0;
 
@@ -105,14 +105,14 @@ int main(void) {
 	        for(i = 0; i <= my_angle; i = i + 2)
 	        {
 	            cyBOT_Scan(i, &x);
-	            if(curDist - 1 < x.sound_dist < curDist + 1)
+	            if((curDist - 10) < x.sound_dist < (curDist + 10))
 	            {
 	                cwidth = cwidth + 2;
 	                ccurpdistance = curDist;
 	                cangle = i;
 
 	            }
-	            else if (x.sound_dist < 300)
+	            else if (x.sound_dist < 200)
 	            {
 	                scanObjs[objCount].width = cwidth;
 	                cwidth = 0;
@@ -123,14 +123,14 @@ int main(void) {
 	                objCount++;
 	                //my_angle = 0;
 	            }
-	            else if (x.sound_dist > 300)
+	            else if (x.sound_dist > 200)
 	            {
 	                cwidth = 0;
 	                ccurpdistance = 0;
 	                cangle = 0;
 	            }
 	            //else if(x.sound_dist == curDist && )
-	            sprintf(stringToSend, "%d \t %2.2f \t %d", i, x.sound_dist);
+	            sprintf(stringToSend, "%d \t %2.2f \t", i, x.sound_dist);
 	                //increment 'width'
 	                //record its distance and its angle
 
@@ -141,10 +141,6 @@ int main(void) {
 	            sendString(stringToSend);
 	        }
 
-	        if(ccurpdistance < 300)
-	        {
-
-	        }
 
 	        int j;
 	        int smallestobjidx = 0;
@@ -189,14 +185,19 @@ int main(void) {
 }
 
 
-void sendString(char str[])
+void sendString(char *str)
 {
-    char *ptr;
+    int i;
+    for(i = 0; i < strlen(str); i++)\
+    {
+        cyBot_sendByte(str[i]);
+    }
+    /*char *ptr;
     ptr = str;
     while(*ptr != '\0')
     {
         cyBot_sendByte(*ptr++);
-    }
+    }*/
     cyBot_sendByte('\n');
     cyBot_sendByte('\r');
 
