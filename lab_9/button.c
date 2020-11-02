@@ -14,113 +14,56 @@
 // GPIO_PORTE_DATA_R -- Name of the memory mapped register for GPIO Port E, 
 // which is connected to the push buttons
 #include "button.h"
-#include "lcd.h"
 
-// Global varibles
-volatile int button_event;
-volatile int button_num;
 
 /**
  * Initialize PORTE and configure bits 0-3 to be used as inputs for the buttons.
  */
 void button_init() {
-    static uint8_t initialized = 0;
-
-    //Check if already initialized
-    if(initialized){
-        return;
-    }
-
-    // delete warning after implementing
-    //#warning "Unimplemented function: void button_init()"
-
-    // Reading: To initialize and configure GPIO PORTE, visit pg. 656 in the
-    // Tiva datasheet.
-
-    // Follow steps in 10.3 for initialization and configuration. Some steps
-    // have been outlined below.
-
-    // Ignore all other steps in initialization and configuration that are not
-    // listed below. You will learn more about additional steps in a later lab.
-
-    // 1) Turn on PORTE system clock, do not modify other clock enables
-    SYSCTL_RCGCGPIO_R |= 0b010000;
-
-    // 2) Set the buttons as inputs, do not modify other PORTE wires
-    GPIO_PORTE_DIR_R &= 0b00000000; //663
-
-    // 3) Enable digital functionality for button inputs,
-    //    do not modify other PORTE enables
-    GPIO_PORTE_DEN_R |= 0xFF;
+	static uint8_t initialized = 0;
 
 
-    initialized = 1;
+
+	//Check if already initialized
+	if(initialized){
+		return;
+	}
+
+	// delete warning after implementing 
+	
+
+	// Reading: To initialize and configure GPIO PORTE, visit pg. 656 in the 
+	// Tiva datasheet.
+	
+	// Follow steps in 10.3 for initialization and configuration. Some steps 
+	// have been outlined below.
+	
+	// Ignore all other steps in initialization and configuration that are not 
+	// listed below. You will learn more about additional steps in a later lab.
+
+	// 1) Turn on PORTE system clock, do not modify other clock enables
+	SYSCTL_RCGCGPIO_R |= 0x00000010;
+
+	// 2) Set the buttons as inputs, do not modify other PORTE wires
+	GPIO_PORTE_DIR_R &= 0xffffff00;
+	
+	// 3) Enable digital functionality for button inputs, 
+	//    do not modify other PORTE enables
+	GPIO_PORTE_DEN_R |= 0x0000000ff;
+
+	
+	initialized = 1;
 }
 
 
 
 /**
- * Initialize and configure PORTE interupts
- */
-void init_button_interrupts() {
-
-    //#warning: "Unimplemented function: void init_button_interrupts() -- You must configure GPIO to detect interrupts" // delete warning after implementing
-    // In order to configure GPIO ports to detect interrupts, you will need to visit pg. 656 in the Tiva datasheet.
-    // Notice that you already followed some steps in 10.3 for initialization and configuration of the GPIO ports in the function button_init().
-    // Additional steps for setting up the GPIO port to detect interrupts have been outlined below.
-    // TODO: Complete code below
-
-    // 1) Mask the bits for pins 0-3
-    GPIO_PORTE_IM_R &= 0b11110000;
-
-    // 2) Set pins 0-3 to use edge sensing
-    GPIO_PORTE_IS_R &= 0b11110000;
-
-    // 3) Set pins 0-3 to use both edges. We want to update the LCD
-    //    when a button is pressed, and when the button is released.
-    GPIO_PORTE_IBE_R |= 0b00001111;
-
-    // 4) Clear the interrupts
-    GPIO_PORTE_ICR_R = 0b00001111;
-
-    // 5) Unmask the bits for pins 0-3
-    GPIO_PORTE_IM_R |= 0b00001111;
-
-    //#warning: "Unimplemented function: void init_button_interrupts() -- You must configure interrupts" // delete warning after implementing
-    // TODO: Complete code below
-    // 6) Enable GPIO port E interrupt
-    NVIC_EN0_R |= 0b00010000;
-
-    // Bind the interrupt to the handler.
-    IntRegister(INT_GPIOE, gpioe_handler);
-}
-
-
-/**
- * Interrupt handler -- executes when a GPIO PortE hardware event occurs (i.e., for this lab a button is pressed)
- */
-void gpioe_handler() {
-
-//#warning: "Unimplemented function: void gpioe_handler() -- You must configure interrupts" // delete warning after implementing
-    // Clear interrupt status register
-    GPIO_PORTE_ICR_R = 0x0F;
-    button_event = 1;
-    int but = button_getButton();
-    //lcd_printf("%" PRIu8 "\n",button_getButton());
-    lcd_printf("%d", but);
-    //lcd_printf("%c", button_getButton());
-}
-
-
-
-
-/**
- * Returns the position of the rightmost button being pushed.
- * @return the position of the rightmost button being pushed. 4 is the rightmost button, 1 is the leftmost button.  0 indicates no button being pressed
+ * Returns the position of the leftmost button being pushed.
+ * @return the position of the leftmost button being pushed. 4 is the leftmost button, 1 is the rightmost button.  0 indicates no button being pressed
  */
 uint8_t button_getButton() {
 
-	//#warning "Unimplemented function: uint8_t button_getButton(void)"	// delete warning after implementing
+		// delete warning after implementing
 
 	//
 	// DELETE ME - How bitmasking works
@@ -156,28 +99,26 @@ uint8_t button_getButton() {
 	// TODO: Write code below -- Return the left must button position pressed
 	
 	// INSERT CODE HERE!
+    if ((GPIO_PORTE_DATA_R & 0x00000008) == 0x00000000) {
+        return '4';
+    }
 	
-    if((GPIO_PORTE_DATA_R & 0b00001000) == 0b00000000) //S4 is pushed
-    {
-        return 4; //finish
+    else if ((GPIO_PORTE_DATA_R & 0x00000004) == 0x00000000) {
+        return '3';
     }
 
-    if((GPIO_PORTE_DATA_R & 0b00000100) == 0b00000000) //S3 is pushed
-    {
-        return 3;
-    }
+    else if ((GPIO_PORTE_DATA_R & 0x00000002) == 0x00000000) {
+            return '2';
+        }
 
-    if((GPIO_PORTE_DATA_R & 0b00000010) == 0b00000000) //S2 is pushed
-    {
-        return 2; //finish
-    }
+    else if ((GPIO_PORTE_DATA_R & 0x00000001) == 0x00000000) {
+            return '1';
+        }
 
-    if((GPIO_PORTE_DATA_R & 0b00000001) == 0b00000000) //S1 is pushed
-    {
-        return 1; //finish
-    }
-
-    return 0; // EDIT ME
+    else {
+            return '0';
+        }
+ // EDIT ME
 }
 
 
