@@ -14,6 +14,7 @@ ORDERED_OBJS += \
 "./button.obj" \
 "./lcd.obj" \
 "./main.obj" \
+"./open_interface.obj" \
 "./servo.obj" \
 "./tm4c123gh6pm_startup_ccs.obj" \
 "../libcybotScan.lib" \
@@ -162,8 +163,8 @@ lab_9.hex: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(BIN_OUTPUTS__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "Timer.obj" "button.obj" "lcd.obj" "main.obj" "servo.obj" "tm4c123gh6pm_startup_ccs.obj" 
-	-$(RM) "Timer.d" "button.d" "lcd.d" "main.d" "servo.d" "tm4c123gh6pm_startup_ccs.d" 
+	-$(RM) "Timer.obj" "button.obj" "lcd.obj" "main.obj" "open_interface.obj" "servo.obj" "tm4c123gh6pm_startup_ccs.obj" 
+	-$(RM) "Timer.d" "button.d" "lcd.d" "main.d" "open_interface.d" "servo.d" "tm4c123gh6pm_startup_ccs.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 
