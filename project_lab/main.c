@@ -1,19 +1,4 @@
 
-
-Skip to content
-Using Gmail with screen readers
-Meet
-New meeting
-Join a meeting
-Hangouts
-
-Conversations
-2.33 GB (15%) of 15 GB used
-Manage
-Terms · Privacy · Program Policies
-Last account activity: 0 minutes ago
-Open in 1 other location · Details
-
    /**
  * lab4_template.c
  *
@@ -45,7 +30,7 @@ Open in 1 other location · Details
 
 
 int main(void) {
-    resetSimulationBoard();
+    //resetSimulationBoard();
 
     adc_init();
     ping_init();
@@ -65,16 +50,18 @@ int main(void) {
     char stringToSend[100];
     int j;
     int smallestobjidx = 0;
+    int smallestobjidx2 = 0;
     int distanceToMove = 0;
             int curWid = 1000;
             sendString("\r \n \n Object# \t Angle \t Distance \t Width \t Linear Width \r \n");
             for(j = 0; j < objCount; j++)
             {
                 //double h = scanObjs[j].curpdistance*cos((scanObjs[j].width/2.0)/57.2958);
-                if(curWid > sqrt((2*pow(scanObjs[j].curpdistance, 2)) - (2*scanObjs[j].curpdistance*scanObjs[j].curpdistance*cos(scanObjs[j].width/57.2958)) ))
+                if(curWid > sqrt((2*pow(scanObjs[j].curpdistance, 2)) - (2*scanObjs[j].curpdistance*scanObjs[j].curpdistance*cos(scanObjs[j].width/57.2958))))
                 {
-                    curWid = sqrt((2*pow(scanObjs[j].curpdistance, 2)) - (2*scanObjs[j].curpdistance*scanObjs[j].curpdistance*cos(scanObjs[j].width/57.2958)) );
-                    smallestobjidx = j;
+                    curWid = sqrt((2*pow(scanObjs[j].curpdistance, 2)) - (2*scanObjs[j].curpdistance*scanObjs[j].curpdistance*cos(scanObjs[j].width/57.2958)));
+                     smallestobjidx2 = smallestobjidx;
+                     smallestobjidx = j;
                 }
                 //double h = scanObjs[j].curpdistance*cos((scanObjs[j].width/2.0)/57.2958);
                 //2*(sqrt((pow(scanObjs[j].curpdistance/1.0, 2.0)- pow(h, 2.0))))
@@ -83,18 +70,42 @@ int main(void) {
             }//%2.2f
 
             timer_waitMillis(100);
-            if(scanObjs[smallestobjidx].angle >= 270)
+
+
+
+
+
+
+           int angleToTurn = (scanObjs[smallestobjidx].angle + scanObjs[smallestobjidx2].angle)/2;
+
+            if(angleToTurn >= 270)
             {
-                turn_clockwise(sensor_data, scanObjs[smallestobjidx].angle - 270);
+                turn_clockwise(sensor_data, angleToTurn - 270);
             }
-            if(scanObjs[smallestobjidx].angle <= 90)
+            if(angleToTurn <= 90)
             {
-                turn_clockwise(sensor_data, scanObjs[smallestobjidx].angle + 90);
+                turn_clockwise(sensor_data, angleToTurn + 90);
             }
             else
             {
-                turn_cclockwise(sensor_data, -(270 - scanObjs[smallestobjidx].angle));
+                turn_cclockwise(sensor_data, -(270 - angleToTurn));
             }
+
+
+
+
+                        /*if(scanObjs[smallestobjidx].angle >= 270)
+                        {
+                            turn_clockwise(sensor_data, scanObjs[smallestobjidx].angle - 270);
+                        }
+                        if(scanObjs[smallestobjidx].angle <= 90)
+                        {
+                            turn_clockwise(sensor_data, scanObjs[smallestobjidx].angle + 90);
+                        }
+                        else
+                        {
+                            turn_cclockwise(sensor_data, -(270 - scanObjs[smallestobjidx].angle));
+                        }*/
             //turn_clockwise(sensor_data, 90);
             //turn_cclockwise(sensor_data, scanObjs[smallestobjidx].angle);
             timer_waitMillis(100);
@@ -119,5 +130,3 @@ int main(void) {
 
 
 
-main.txt
-Displaying sacan.txt.

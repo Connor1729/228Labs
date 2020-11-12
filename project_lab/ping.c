@@ -1,3 +1,5 @@
+
+
 /*
  * ping.c
  *
@@ -103,5 +105,4 @@ void TIMER3B_Handler(void) {
     }
     TIMER3_ICR_R |= 0x00000400;
 }
-
 

@@ -1,19 +1,5 @@
 
 
-Skip to content
-Using Gmail with screen readers
-Meet
-New meeting
-Join a meeting
-Hangouts
-
-Conversations
-2.33 GB (15%) of 15 GB used
-Manage
-Terms · Privacy · Program Policies
-Last account activity: 0 minutes ago
-Open in 1 other location · Details
-
 /*
  * scan.c
  *
@@ -117,6 +103,3 @@ void sendString(char *str)
 }
 
 
-
-sacan.txt
-Displaying sacan.txt.
