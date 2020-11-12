@@ -1,3 +1,19 @@
+
+
+Skip to content
+Using Gmail with screen readers
+Meet
+New meeting
+Join a meeting
+Hangouts
+
+Conversations
+2.33 GB (15%) of 15 GB used
+Manage
+Terms · Privacy · Program Policies
+Last account activity: 0 minutes ago
+Open in 1 other location · Details
+
 /*
  * scan.c
  *
@@ -14,7 +30,11 @@
 #include "servo.h"
 #include "scan.h"
 #include "ping.h"
+#include "open_interface.h"
+#include "movement.h"
+int callCount;
 void scan_read(int angle){
+    int tempDegrees = 0;
     curWidth = 0;
     adc_init();
     ping_init();
@@ -23,21 +43,40 @@ void scan_read(int angle){
     cyBot_uart_init();
     objCount = 0;
     char curdata[100];
-     degrees = 0;
+    degrees = 0;
+    if(callCount != 0)
+    {
+        degrees = 180;
+    }
+
+    oi_t *sensor_data = oi_alloc();
+    oi_init(sensor_data);
 
     servo_init();
 
         while(degrees<=angle){
-          servo_move(degrees);
-
+          if(degrees < 180)
+          {
+              servo_move(degrees);
+          }
+          else if(degrees == 180)
+          {
+              turn_clockwise(sensor_data, 180);
+          }
+          else if(degrees > 180)
+          {
+              tempDegrees = degrees;
+              servo_move(tempDegrees - 180);
+          }
 
         int rawvalue = adc_read();//if the IR sensor reads less than 200 we assume an object is present and use ping
         if(rawvalue >= 200){
             ping_read();
 
         }
+
         else if(rawvalue< 200){
-            lcd_printf("No object detected");
+            lcd_printf("No object detected.");
             curWidth = 0;
             //sendString(curdata);
             if(scanObjs[objCount].width > 0)
@@ -50,11 +89,11 @@ void scan_read(int angle){
 
 
         timer_waitMillis(250);
-        degrees = degrees + 2;
-        curWidth = curWidth + 2;
+        degrees = degrees + 1;
+        curWidth = curWidth + 1;
 
         }
-
+servo_move(0);
 
 
 }
@@ -79,3 +118,5 @@ void sendString(char *str)
 
 
 
+sacan.txt
+Displaying sacan.txt.
