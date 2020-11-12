@@ -1,5 +1,3 @@
-
-
 /*
  * scan.c
  *
@@ -101,5 +99,6 @@ void sendString(char *str)
     cyBot_sendByte('\r');
 
 }
+
 
 

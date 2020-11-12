@@ -1,5 +1,4 @@
-
-   /**
+    /**
  * lab4_template.c
  *
  * Template file for CprE 288 lab 4
@@ -30,7 +29,7 @@
 
 
 int main(void) {
-    //resetSimulationBoard();
+    resetSimulationBoard();
 
     adc_init();
     ping_init();
@@ -57,55 +56,48 @@ int main(void) {
             for(j = 0; j < objCount; j++)
             {
                 //double h = scanObjs[j].curpdistance*cos((scanObjs[j].width/2.0)/57.2958);
-                if(curWid > sqrt((2*pow(scanObjs[j].curpdistance, 2)) - (2*scanObjs[j].curpdistance*scanObjs[j].curpdistance*cos(scanObjs[j].width/57.2958))))
+                if(curWid > sqrt((2*pow(scanObjs[j].curpdistance, 2)) - (2*scanObjs[j].curpdistance*scanObjs[j].curpdistance*cos(scanObjs[j].width/57.2958)) ))
                 {
-                    curWid = sqrt((2*pow(scanObjs[j].curpdistance, 2)) - (2*scanObjs[j].curpdistance*scanObjs[j].curpdistance*cos(scanObjs[j].width/57.2958)));
-                     smallestobjidx2 = smallestobjidx;
-                     smallestobjidx = j;
+                    curWid = sqrt((2*pow(scanObjs[j].curpdistance, 2)) - (2*scanObjs[j].curpdistance*scanObjs[j].curpdistance*cos(scanObjs[j].width/57.2958)) );
+                    smallestobjidx2 = smallestobjidx;
+                    smallestobjidx = j;
                 }
                 //double h = scanObjs[j].curpdistance*cos((scanObjs[j].width/2.0)/57.2958);
                 //2*(sqrt((pow(scanObjs[j].curpdistance/1.0, 2.0)- pow(h, 2.0))))
                 sprintf(stringToSend, "%d \t %d \t %d \t %d \t %f", j, scanObjs[j].angle, scanObjs[j].curpdistance, scanObjs[j].width, sqrt((2*pow(scanObjs[j].curpdistance, 2)) - (2*scanObjs[j].curpdistance*scanObjs[j].curpdistance*cos(scanObjs[j].width/57.2958)) ));
                 sendString(stringToSend);
             }//%2.2f
-
             timer_waitMillis(100);
+            int angleToTurn = (scanObjs[smallestobjidx].angle + scanObjs[smallestobjidx2].angle)/2;
 
-
-
-
-
-
-           int angleToTurn = (scanObjs[smallestobjidx].angle + scanObjs[smallestobjidx2].angle)/2;
-
-            if(angleToTurn >= 270)
-            {
-                turn_clockwise(sensor_data, angleToTurn - 270);
-            }
-            if(angleToTurn <= 90)
-            {
-                turn_clockwise(sensor_data, angleToTurn + 90);
-            }
-            else
-            {
-                turn_cclockwise(sensor_data, -(270 - angleToTurn));
-            }
-
-
-
-
-                        /*if(scanObjs[smallestobjidx].angle >= 270)
+                        if(angleToTurn = 270)
                         {
-                            turn_clockwise(sensor_data, scanObjs[smallestobjidx].angle - 270);
+                            turn_clockwise(sensor_data, angleToTurn - 270);
                         }
-                        if(scanObjs[smallestobjidx].angle <= 90)
+                        if(angleToTurn = 90)
                         {
-                            turn_clockwise(sensor_data, scanObjs[smallestobjidx].angle + 90);
+                            turn_clockwise(sensor_data, angleToTurn + 90);
                         }
                         else
                         {
-                            turn_cclockwise(sensor_data, -(270 - scanObjs[smallestobjidx].angle));
-                        }*/
+                            turn_cclockwise(sensor_data, -(270 - angleToTurn));
+                        }
+
+
+
+            /*if(scanObjs[smallestobjidx].angle >= 270)
+            {
+                turn_clockwise(sensor_data, scanObjs[smallestobjidx].angle - 270);
+            }
+            if(scanObjs[smallestobjidx].angle <= 90)
+            {
+                turn_clockwise(sensor_data, scanObjs[smallestobjidx].angle + 90);
+            }
+            else
+            {
+                turn_cclockwise(sensor_data, -(270 - scanObjs[smallestobjidx].angle));
+            }
+            */
             //turn_clockwise(sensor_data, 90);
             //turn_cclockwise(sensor_data, scanObjs[smallestobjidx].angle);
             timer_waitMillis(100);

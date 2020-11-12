@@ -28,8 +28,9 @@ void servo_init(void)
     TIMER1_CFG_R |= 0x00000004;
     TIMER1_TBMR_R |= 0x0000000A;
 
-    TIMER1_TBPMR_R = 0b00000100;
-    TIMER1_TBMATCHR_R = 0xDA30;
+    unsigned int initDegree = 311000; //0 degrees = 311,000. 180 degrees = 288,000
+    TIMER1_TBPMR_R = initDegree >> 16;
+    TIMER1_TBMATCHR_R = initDegree;
    // TIMER1_IMR_R |= 0x01;
 
     TIMER1_CTL_R |= 0b100000000;

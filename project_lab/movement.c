@@ -43,7 +43,7 @@ void turn_cclockwise(oi_t *sensor, int degrees){
 
      double sum = 0;
      oi_setWheels(-25, 25); // move forward; full speed
-    while (sum > degrees) {
+    while (sum > degrees) {//changed this
      oi_update(sensor);
      sum += sensor->angle;
      }
