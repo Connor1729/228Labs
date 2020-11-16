@@ -58,7 +58,7 @@ void move_back(oi_t *sensor, bool direction, double curSum, int curCent){ //fals
     oi_update(sensor);
 
     oi_setWheels(-500, -500);
-    for( i = 0; i <15; i++){
+    for( i = 0; i <4; i++){
         oi_update(sensor);
     }
     oi_setWheels(0, 0);
@@ -72,7 +72,7 @@ void move_back(oi_t *sensor, bool direction, double curSum, int curCent){ //fals
         }
 
     oi_setWheels(500, 500);
-      for(i=0;i<25;i++){
+      for(i=0;i<5;i++){
            oi_update(sensor);
        }
       oi_setWheels(0, 0);
@@ -84,7 +84,7 @@ void move_back(oi_t *sensor, bool direction, double curSum, int curCent){ //fals
         turn_clockwise(sensor, 90);
      }
 
-    double sumToReturn = curSum - 150;
+    double sumToReturn = curSum - 50;
 
     Move_Forward(sensor, curCent, sumToReturn);
 }

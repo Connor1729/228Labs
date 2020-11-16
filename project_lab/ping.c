@@ -75,9 +75,16 @@ void ping_read(void) {
     sprintf(str, " degrees: %d\n Width: %d\nDistance: %.0f\nOverflows: %d\n",degrees, curWidth, distance, overflow_count);
     //
 
-    scanObjs[objCount].width = curWidth;
-    scanObjs[objCount].curpdistance = distance;
-    scanObjs[objCount].angle = degrees;
+    if(sqrt((2*pow(distance, 2)) - (2*distance*distance*cos(curWidth/57.2958))) > 1)
+    {
+        scanObjs[objCount].width = curWidth;
+        scanObjs[objCount].curpdistance = distance;
+        scanObjs[objCount].angle = degrees;
+    }
+
+    //if(curWidth > 1)
+
+
 
 
 

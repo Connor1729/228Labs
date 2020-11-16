@@ -12444,3 +12444,1856 @@ Finished building target: "project_lab.out"
  
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../servo.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="servo.d_raw"  "../servo.c"
+"../servo.c", line 41: warning #179-D: variable "degrees2" was declared but never referenced
+Finished building: "../servo.c"
+ 
+Building file: "../ping.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ping.d_raw"  "../ping.c"
+Finished building: "../ping.c"
+ 
+Building file: "../scan.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="scan.d_raw"  "../scan.c"
+"../scan.c", line 29: warning #179-D: variable "curdata" was declared but never referenced
+Finished building: "../scan.c"
+ 
+Building file: "../movement.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="movement.d_raw"  "../movement.c"
+Finished building: "../movement.c"
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 73: warning #189-D: use of "=" where "==" may have been intended
+"../main.c", line 77: warning #189-D: use of "=" where "==" may have been intended
+Finished building: "../main.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 73: warning #189-D: use of "=" where "==" may have been intended
+"../main.c", line 77: warning #189-D: use of "=" where "==" may have been intended
+Finished building: "../main.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../servo.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="servo.d_raw"  "../servo.c"
+"../servo.c", line 41: warning #179-D: variable "degrees2" was declared but never referenced
+Finished building: "../servo.c"
+ 
+Building file: "../ping.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ping.d_raw"  "../ping.c"
+Finished building: "../ping.c"
+ 
+Building file: "../movement.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="movement.d_raw"  "../movement.c"
+Finished building: "../movement.c"
+ 
+Building file: "../scan.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="scan.d_raw"  "../scan.c"
+"../scan.c", line 29: warning #179-D: variable "curdata" was declared but never referenced
+Finished building: "../scan.c"
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 73: warning #189-D: use of "=" where "==" may have been intended
+"../main.c", line 77: warning #189-D: use of "=" where "==" may have been intended
+Finished building: "../main.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../ping.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ping.d_raw"  "../ping.c"
+Finished building: "../ping.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 73: warning #189-D: use of "=" where "==" may have been intended
+"../main.c", line 77: warning #189-D: use of "=" where "==" may have been intended
+Finished building: "../main.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 73: warning #189-D: use of "=" where "==" may have been intended
+"../main.c", line 77: warning #189-D: use of "=" where "==" may have been intended
+Finished building: "../main.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../scan.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="scan.d_raw"  "../scan.c"
+"../scan.c", line 29: warning #179-D: variable "curdata" was declared but never referenced
+Finished building: "../scan.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../scan.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="scan.d_raw"  "../scan.c"
+"../scan.c", line 29: warning #179-D: variable "curdata" was declared but never referenced
+Finished building: "../scan.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../scan.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="scan.d_raw"  "../scan.c"
+"../scan.c", line 29: warning #179-D: variable "curdata" was declared but never referenced
+Finished building: "../scan.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../scan.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="scan.d_raw"  "../scan.c"
+"../scan.c", line 29: warning #179-D: variable "curdata" was declared but never referenced
+Finished building: "../scan.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../scan.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="scan.d_raw"  "../scan.c"
+"../scan.c", line 29: warning #179-D: variable "curdata" was declared but never referenced
+Finished building: "../scan.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../scan.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="scan.d_raw"  "../scan.c"
+"../scan.c", line 29: warning #179-D: variable "curdata" was declared but never referenced
+Finished building: "../scan.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 87: warning #169-D: argument of type "int" is incompatible with parameter of type "char *"
+Finished building: "../main.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab3 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'lab3.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'lab4.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_1 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'lab_1.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_5 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'lab_5.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_6 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'lab_6.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_7 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'lab_7.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_8 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'lab_8.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_9 ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/lab_9" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 12: fatal error #1965: cannot open source file "resetSimulation.h"
+1 catastrophic error detected in the compilation of "../main.c".
+Compilation terminated.
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 80: error #66: expected a ";"
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 80: error #66: expected a ";"
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building file: "../movement.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="movement.d_raw"  "../movement.c"
+Finished building: "../movement.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../movement.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="movement.d_raw"  "../movement.c"
+Finished building: "../movement.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../movement.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="movement.d_raw"  "../movement.c"
+Finished building: "../movement.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../movement.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="movement.d_raw"  "../movement.c"
+Finished building: "../movement.c"
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 42: warning #179-D: variable "delievedPackage" was declared but never referenced
+Finished building: "../main.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 42: warning #179-D: variable "delievedPackage" was declared but never referenced
+Finished building: "../main.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 42: warning #179-D: variable "delievedPackage" was declared but never referenced
+Finished building: "../main.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE228Github/228Labs/project_lab" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 42: warning #179-D: variable "delievedPackage" was declared but never referenced
+Finished building: "../main.c"
+ 
+Building target: "project_lab.out"
+Invoking: ARM Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project_lab.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_lab_linkInfo.xml" --rom_model -o "project_lab.out" "./Timer.obj" "./adc.obj" "./button.obj" "./lcd.obj" "./main.obj" "./movement.obj" "./open_interface.obj" "./ping.obj" "./resetSimulation.obj" "./scan.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "project_lab.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_lab ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project_lab.out' is up to date.
+
+**** Build Finished ****

@@ -54,12 +54,12 @@ void scan_read(int angle){
           }
 
         int rawvalue = adc_read();//if the IR sensor reads less than 200 we assume an object is present and use ping
-        if(rawvalue >= 200){
+        if(rawvalue >= 550){ //was 200
             ping_read();
 
         }
 
-        else if(rawvalue< 200){
+        else if(rawvalue< 550){ //was 200
             lcd_printf("No object detected.");
             curWidth = 0;
             //sendString(curdata);
