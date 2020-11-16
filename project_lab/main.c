@@ -39,30 +39,23 @@ int main(void) {
     oi_init(sensor_data);
 
 
-    bool delievedPackage = false;
-    /*
+    bool deliveredPackage = false;
+
     double distTraveled = 0;
+    struct cybotObject emptyObjs[10];
 
 
-    while(delievedPackage == false)
+    while(deliveredPackage == false)
     {
-        Move_Forward(sensor_data, 30, distTraveled);
-        distTraveled = distTraveled + 30;
-        if(distTraveled > 100)
-        {
-            delievedPackage = true;
-        }
 
-    }*/
+        scan_read(360);
+        turn_clockwise(sensor_data, 180);
 
-
-    scan_read(360);
-
-    char stringToSend[100];
-    int j;
-    volatile int smallestobjidx = 0;
-    volatile int smallestobjidx2 = 0;
-    int distanceToMove = 0;
+        char stringToSend[100];
+        int j;
+        volatile int smallestobjidx = 0;
+        volatile int smallestobjidx2 = 0;
+        int distanceToMove = 0;
             int curWid = 1000;
             int secWidth = 1000;
             sendString("\r \n \n Object# \t Angle \t Distance \t Width \t Linear Width \r \n");
@@ -142,44 +135,24 @@ int main(void) {
                 timer_waitMillis(100);
                 distanceToMove = (scanObjs[smallestobjidx].curpdistance + scanObjs[smallestobjidx2].curpdistance)/2; //so dont bump and cause move things
 
-                Move_Forward(sensor_data, distanceToMove - 10, 0);
-
-                if(scanObjs[smallestobjidx].curpdistance > scanObjs[smallestobjidx2].curpdistance)
-                {
-                    if(angleToTurn >= 270)
-                    {
-                        turn_cclockwise(sensor_data, angleToTurn - 270);
-                    }
-                    else if(angleToTurn <= 90)
-                    {
-                         turn_cclockwise(sensor_data, angleToTurn + 90);
-                    }
-                    else
-                    {
-                         turn_clockwise(sensor_data, -(270 - angleToTurn));
-                    }
-                    turn_clockwise(sensor_data, 90);
-                    Move_Forward(sensor_data, 15, 0);
-                }
-                else if(scanObjs[smallestobjidx].curpdistance < scanObjs[smallestobjidx2].curpdistance)
-                {
-                    if(angleToTurn >= 270)
-                    {
-                        turn_cclockwise(sensor_data, angleToTurn - 270);
-                    }
-                    else if(angleToTurn <= 90)
-                    {
-                         turn_cclockwise(sensor_data, angleToTurn + 90);
-                    }
-                    else
-                    {
-                         turn_clockwise(sensor_data, -(270 - angleToTurn));
-                    }
-                    turn_cclockwise(sensor_data, 90);
-                    Move_Forward(sensor_data, 15, 0);
-                }
+                Move_Forward(sensor_data, distanceToMove - 5, distTraveled);
+                deliveredPackage = true;
 
             }
+            else
+            {
+                //clear the array of objects we scanned
+                objCount = 0;
+                //scanObjs = emptyObjs;
+
+            }
+
+            Move_Forward(sensor_data, 30, distTraveled);
+            distTraveled = distTraveled + 30;
+
+    }
+
+    sendString("Package Delivered");
 
 
 
