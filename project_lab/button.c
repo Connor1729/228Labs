@@ -177,7 +177,7 @@ uint8_t button_getButton() {
         return 1; //finish
     }
 
-    return 0; // EDIT ME
+    return 0;
 }
 
 

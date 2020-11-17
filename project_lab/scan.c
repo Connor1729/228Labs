@@ -19,6 +19,7 @@
 int callCount;
 void scan_read(int angle){
     int tempDegrees = 0;
+    //initialize the various systems
     curWidth = 0;
     adc_init();
     ping_init();
@@ -32,34 +33,34 @@ void scan_read(int angle){
     {
         degrees = 180;
     }
-
+    //init sensor
     oi_t *sensor_data = oi_alloc();
     oi_init(sensor_data);
 
     servo_init();
 
-        while(degrees<=angle){
-          if(degrees < 180)
+        while(degrees<=angle){ //moves servo angle degrees
+          if(degrees < 180) //rotates to 180 degrees
           {
               servo_move(degrees);
           }
-          else if(degrees == 180)
+          else if(degrees == 180) //at 180 it will rotate the bot to make a 360 scan
           {
               turn_clockwise(sensor_data, 180);
           }
-          else if(degrees > 180)
+          else if(degrees > 180) //scan the second 180 degrees
           {
               tempDegrees = degrees;
               servo_move(tempDegrees - 180);
           }
 
-        int rawvalue = adc_read();//if the IR sensor reads less than 200 we assume an object is present and use ping
-        if(rawvalue >= 550){ //was 200
-            ping_read();
+        int rawvalue = adc_read();//if the IR sensor reads greater than 550 we assume an object is present and use ping
+        if(rawvalue >= 550){ //was 200 increased value to reduce range of sensor
+            ping_read(); //use ping to get distance
 
         }
 
-        else if(rawvalue< 550){ //was 200
+        else if(rawvalue< 550){ //was 200 increased value to reduce range. if its less than 550 we wont record the object
             lcd_printf("No object detected.");
             curWidth = 0;
             //sendString(curdata);
@@ -72,9 +73,9 @@ void scan_read(int angle){
 
 
 
-        timer_waitMillis(250);
-        degrees = degrees + 1;
-        curWidth = curWidth + 1;
+        timer_waitMillis(100); //1/10 of a second
+        degrees = degrees + 2; //increment degrees by 2
+        curWidth = curWidth + 2; //increment width by 2
 
         }
 servo_move(0);
@@ -82,7 +83,7 @@ servo_move(0);
 
 }
 
-void sendString(char *str)
+void sendString(char *str) //send strings to putty
 {
     int i;
     for(i = 0; i < strlen(str); i++)\

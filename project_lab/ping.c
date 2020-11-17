@@ -17,7 +17,7 @@ volatile int edge_count = 0;
 
 void ping_init(void) {
 
-    //GPIO
+    //intializing GPIO
     SYSCTL_RCGCGPIO_R |= 0x00000002;
     long delay = SYSCTL_RCGCGPIO_R;
     GPIO_PORTB_AFSEL_R |= 0x00000008;
@@ -25,7 +25,7 @@ void ping_init(void) {
     GPIO_PORTB_DEN_R |= 0x00000008;
     GPIO_PORTB_DIR_R &= 0x000000F7;
 
-    //11.4.4
+    //initializing based on 11.4.4 in textbook
     SYSCTL_RCGCTIMER_R |= 0x00000008;
     delay = SYSCTL_RCGCTIMER_R;
     TIMER3_CTL_R &= 0xFFFFFEFF;
@@ -58,11 +58,11 @@ void ping_read(void) {
     double width, distance = 0;
     int overflow_count = 0;
 
-    while(edge_count < 2);
+    while(edge_count < 2); //wait to detect two edges
 
     width = (double)prev_time - current_time;
 
-    if(current_time > prev_time){
+    if(current_time > prev_time){ // detects if an overflow occurs
         overflow_count++;
         width = (double)(0xFFFFFF - current_time) + prev_time;
     }
@@ -72,17 +72,18 @@ void ping_read(void) {
     distance *= 34;
 
     char str[100];
-    sprintf(str, " degrees: %d\n Width: %d\nDistance: %.0f\nOverflows: %d\n",degrees, curWidth, distance, overflow_count);
-    //
+    sprintf(str, " Degrees: %d\n Width: %d\nDistance: %.0f\nOverflows: %d\n",degrees, curWidth, distance, overflow_count);
+    //prints out string of info
 
-    if(sqrt((2*pow(distance, 2)) - (2*distance*distance*cos(curWidth/57.2958))) > 1)
+    if(sqrt((2*pow(distance, 2)) - (2*distance*distance*cos(curWidth/57.2958))) > 1) //linear width greater than 1 add values to struct
     {
+        //places values in our struct
         scanObjs[objCount].width = curWidth;
         scanObjs[objCount].curpdistance = distance;
         scanObjs[objCount].angle = degrees;
     }
 
-    //if(curWidth > 1)
+
 
 
 
