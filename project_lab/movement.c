@@ -4,69 +4,67 @@ void Move_Forward(oi_t *sensor, int centimeters, double sum){
 
  bool dir;
  int distanceToTravel = centimeters * 10;
- oi_setWheels(500, 500); // move forward; full speed
-<<<<<<< HEAD
- while ((int)sum < distanceToTravel) {
-=======
+ oi_setWheels(200, 200); // move forward; full speed
  while (sum < distanceToTravel) { //move forward while sum is less distance
->>>>>>> 1d317c984cc175dca56b03636e7f9e7d8865ad1d
      oi_update(sensor);
      if(sensor->bumpLeft) //detects bump on left
      {
-<<<<<<< HEAD
-        dir = false;
-        move_back(sensor, dir, sum, centimeters);
-        break;
-=======
         dir = false; //false means it will go around it to the right
         move_back(sensor, dir, sum, centimeters); //moves robot back and goes around the object
->>>>>>> 1d317c984cc175dca56b03636e7f9e7d8865ad1d
      }
      else if(sensor->bumpRight) //detects bump on right
      {
          dir = true; //true means it will go around it to the left
          move_back(sensor, dir, sum, centimeters);
-         break;
      }
-     else if(sensor->cliffLeft) //detects cliff on left
+     else if(sensor->cliffLeftSignal > 2700) //detects wall on left
      {
          dir = false;
-         move_back(sensor, dir, sum, centimeters);
-         break;
+         move_back_wall(sensor);
      }
-     else if(sensor->cliffRight) //detects cliff on right
+     else if(sensor->cliffRightSignal > 2700) //detects wall right
      {
          dir = true;
-         move_back(sensor, dir, sum, centimeters);
-         break;
+         move_back_wall(sensor);
      }
-     else if(sensor->cliffFrontLeft)// detects cliff front left
+     else if(sensor->cliffFrontLeftSignal > 2700)// detects wall on front left
      {
          dir = false;
-         move_back(sensor, dir, sum, centimeters);
-         break;
+         move_back_wall(sensor);
      }
-     else if(sensor->cliffFrontRight)// detects cliff on front right
+     else if(sensor->cliffFrontRightSignal > 2700)// detects wall on front right
      {
          dir = true;
-         move_back(sensor, dir, sum, centimeters);
-         break;
+         move_back_wall(sensor);
      }
+     else if(sensor->cliffLeftSignal < 1000) //detects cliff on left
+          {
+              dir = false;
+              move_back(sensor, dir, sum, centimeters);
+          }
+          else if(sensor->cliffRightSignal < 1000) //detects cliff on right
+          {
+              dir = true;
+              move_back(sensor, dir, sum, centimeters);
+          }
+          else if(sensor->cliffFrontLeftSignal < 1000)// detects cliff front left
+          {
+              dir = false;
+              move_back(sensor, dir, sum, centimeters);
+          }
+          else if(sensor->cliffFrontRightSignal < 1000)// detects cliff on front right
+          {
+              dir = true;
+              move_back(sensor, dir, sum, centimeters);
+          }
      sum += sensor->distance;
  }
  oi_setWheels(0, 0); // stop
 
+
  }
 
-<<<<<<< HEAD
-
-
-
-
-void turn_clockwise(oi_t *sensor, int degrees){
-=======
 void turn_clockwise(oi_t *sensor, int degrees){ //turn robot clockwise
->>>>>>> 1d317c984cc175dca56b03636e7f9e7d8865ad1d
 
 
      double sum = 0;
@@ -98,13 +96,8 @@ void move_back(oi_t *sensor, bool direction, double curSum, int curCent){ //fals
     int i;
     oi_update(sensor);
 
-<<<<<<< HEAD
-    oi_setWheels(-500, -500);
-    for( i = 0; i <5; i++){
-=======
     oi_setWheels(-500, -500); //moves robot backward
     for( i = 0; i <4; i++){
->>>>>>> 1d317c984cc175dca56b03636e7f9e7d8865ad1d
         oi_update(sensor);
     }
     oi_setWheels(0, 0); //stop
@@ -117,13 +110,8 @@ void move_back(oi_t *sensor, bool direction, double curSum, int curCent){ //fals
              turn_cclockwise(sensor, -90);
         }
 
-<<<<<<< HEAD
-    oi_setWheels(500, 500);
-      for(i=0;i<8;i++){
-=======
     oi_setWheels(500, 500); //move forward
       for(i=0;i<10;i++){
->>>>>>> 1d317c984cc175dca56b03636e7f9e7d8865ad1d
            oi_update(sensor);
        }
       oi_setWheels(0, 0); //stop
@@ -135,11 +123,26 @@ void move_back(oi_t *sensor, bool direction, double curSum, int curCent){ //fals
         turn_clockwise(sensor, 90);
      }
 
-    double sumToReturn = curSum - 8;
+    double sumToReturn = curSum - 50;
 
     Move_Forward(sensor, curCent, sumToReturn); //moves forward past object
 }
 
+void move_back_wall(oi_t *sensor){ //moves robot away from wall
+    int i;
+    oi_update(sensor);
+    oi_setWheels(-500, -500); //moves robot backward
+        for( i = 0; i <4; i++){
+            oi_update(sensor);
+        }
+        oi_setWheels(0, 0); //stop
+        turn_clockwise(sensor, 180);
+        oi_setWheels(500, 500); //move forward
+              for(i=0;i<4;i++){
+                   oi_update(sensor);
+               }
+              oi_setWheels(0, 0); //stop
+}
 
 void Move_Backward(oi_t *sensor, int centimeters, double sum){ //just moves the robot backward
 
@@ -148,37 +151,57 @@ void Move_Backward(oi_t *sensor, int centimeters, double sum){ //just moves the 
  oi_setWheels(-500, -500); // move backward; full speed
  while (sum < distanceToTravel) { //move backward till distanceToTravel is met
      oi_update(sensor);
-     if(sensor->bumpLeft)
-     {
-        dir = false;
-        move_back(sensor, dir, sum, centimeters);
-     }
-     else if(sensor->bumpRight)
-     {
-         dir = true;
-         move_back(sensor, dir, sum, centimeters);
-     }
-     /*else if(sensor->cliffLeft)
+     if(sensor->bumpLeft) //detects bump on left
           {
-              dir = false;
-              move_back(sensor, dir, sum, centimeters);
-          }
-     else if(sensor->cliffRight)
-          {
-              dir = true;
-              move_back(sensor, dir, sum, centimeters);
-          }
-     else if(sensor->cliffFrontLeft)
-          {
-              dir = false;
-              move_back(sensor, dir, sum, centimeters);
-          }
-     else if(sensor->cliffFrontRight)
-          {
-              dir = true;
-              move_back(sensor, dir, sum, centimeters);
-          }*/
-     sum += sensor->distance;
+         dir = false; //false means it will go around it to the right
+                 move_back(sensor, dir, sum, centimeters); //moves robot back and goes around the object
+              }
+              else if(sensor->bumpRight) //detects bump on right
+              {
+                  dir = true; //true means it will go around it to the left
+                  move_back(sensor, dir, sum, centimeters);
+              }
+              else if(sensor->cliffLeftSignal > 2700) //detects wall on left
+              {
+                  dir = false;
+                  move_back_wall(sensor);
+              }
+              else if(sensor->cliffRightSignal > 2700) //detects wall right
+              {
+                  dir = true;
+                  move_back_wall(sensor);
+              }
+              else if(sensor->cliffFrontLeftSignal > 2700)// detects wall on front left
+              {
+                  dir = false;
+                  move_back_wall(sensor);
+              }
+              else if(sensor->cliffFrontRightSignal > 2700)// detects wall on front right
+              {
+                  dir = true;
+                  move_back_wall(sensor);
+              }
+              else if(sensor->cliffLeftSignal < 1000) //detects cliff on left
+                   {
+                       dir = false;
+                       move_back(sensor, dir, sum, centimeters);
+                   }
+                   else if(sensor->cliffRightSignal < 1000) //detects cliff on right
+                   {
+                       dir = true;
+                       move_back(sensor, dir, sum, centimeters);
+                   }
+                   else if(sensor->cliffFrontLeftSignal < 1000)// detects cliff front left
+                   {
+                       dir = false;
+                       move_back(sensor, dir, sum, centimeters);
+                   }
+                   else if(sensor->cliffFrontRightSignal < 1000)// detects cliff on front right
+                   {
+                       dir = true;
+                       move_back(sensor, dir, sum, centimeters);
+                   }
+              sum += sensor->distance;
  }
  oi_setWheels(0, 0); // stop
 
