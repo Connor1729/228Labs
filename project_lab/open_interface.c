@@ -358,11 +358,9 @@ void go_charge(void) {
     /*  //Calling demo that will cause Create to seek out home base
    oi_uartSendChar(OI_OPCODE_MAX);
    oi_uartSendChar(0x01);
-
    //Control is returned immediately, so need to check for docking status
    DDRB &= ~0x80; //Setting pin7 to input
    PORTB |= 0x80; //Setting pullup on pin7
-
    do {
    charging_state = PINB >> 7;
    } while (charging_state == 0);
@@ -429,6 +427,7 @@ char oi_uartReceive(void)
     // ToDo: Implement error checking
     return data;
 }
+
 
 /// transmit character array
 void oi_uartSendStr(const char *theData)

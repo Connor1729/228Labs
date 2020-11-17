@@ -27,7 +27,7 @@
 
 
 int main(void) {
-    //resetSimulationBoard();
+    resetSimulationBoard();
 
     adc_init();
     ping_init();
@@ -42,13 +42,20 @@ int main(void) {
     bool deliveredPackage = false;
 
     double distTraveled = 0;
-    struct cybotObject emptyObjs[10];
+    //struct cybotObject emptyObjs[10];
+
+
+    int firstAngle = 0;
+    int secondAngle = 0;
+
+    int firstWidth = 0;
+    int secondWidth = 0;
 
 
     while(deliveredPackage == false)
     {
 
-        scan_read(360);
+        /*scan_read(360);
         turn_clockwise(sensor_data, 180);
 
         char stringToSend[100];
@@ -59,6 +66,9 @@ int main(void) {
             int curWid = 1000;
             int secWidth = 1000;
             sendString("\r \n \n Object# \t Angle \t Distance \t Width \t Linear Width \r \n");
+            sprintf(stringToSend, "The OBJ Count Is: %d ", objCount);
+            sendString(stringToSend);
+
             for(j = 0; j < objCount; j++)
             {
 
@@ -91,15 +101,28 @@ int main(void) {
             }
             timer_waitMillis(100);
 
-            int firstAngle = scanObjs[smallestobjidx].angle;
-            int secondAngle = scanObjs[smallestobjidx2].angle;
+            if(objCount != 0)
+            {
+                firstAngle = scanObjs[smallestobjidx].angle;
+                secondAngle = scanObjs[smallestobjidx2].angle;
 
-            int firstWidth = sqrt((2*pow(scanObjs[smallestobjidx].curpdistance, 2)) - (2*scanObjs[smallestobjidx].curpdistance*scanObjs[smallestobjidx].curpdistance*cos(scanObjs[smallestobjidx].width/57.2958)));
-            int secondWidth = sqrt((2*pow(scanObjs[smallestobjidx2].curpdistance, 2)) - (2*scanObjs[smallestobjidx2].curpdistance*scanObjs[smallestobjidx2].curpdistance*cos(scanObjs[smallestobjidx2].width/57.2958)));
+                firstWidth = sqrt((2*pow(scanObjs[smallestobjidx].curpdistance, 2)) - (2*scanObjs[smallestobjidx].curpdistance*scanObjs[smallestobjidx].curpdistance*cos(scanObjs[smallestobjidx].width/57.2958)));
+                secondWidth = sqrt((2*pow(scanObjs[smallestobjidx2].curpdistance, 2)) - (2*scanObjs[smallestobjidx2].curpdistance*scanObjs[smallestobjidx2].curpdistance*cos(scanObjs[smallestobjidx2].width/57.2958)));
+            }
+            else
+            {
+                firstAngle = 0;
+                secondAngle = 0;
+
+                firstWidth = 0;
+                secondWidth = 0;
+            }
+
+
 
             int angleToTurn;
 
-            if(firstWidth < 6.7 && secondWidth < 6.7)
+            if((firstWidth < 6.7 && secondWidth < 6.7) && (objCount != 0) && (firstWidth != 0) && (secondWidth != 0))
             {
 
                 sprintf(stringToSend, "The First Angle Is: %d at index: %d", firstAngle, smallestobjidx);
@@ -135,20 +158,21 @@ int main(void) {
                 timer_waitMillis(100);
                 distanceToMove = (scanObjs[smallestobjidx].curpdistance + scanObjs[smallestobjidx2].curpdistance)/2; //so dont bump and cause move things
 
-                Move_Forward(sensor_data, distanceToMove - 5, distTraveled);
+                Move_Forward(sensor_data, distanceToMove - 5, 0);
                 deliveredPackage = true;
 
             }
-            else
-            {
+            //else
+            //{
                 //clear the array of objects we scanned
-                objCount = 0;
+               // objCount = 0;
                 //scanObjs = emptyObjs;
 
-            }
+           // }*/
 
-            Move_Forward(sensor_data, 30, distTraveled);
-            distTraveled = distTraveled + 30;
+            Move_Forward(sensor_data, 10, distTraveled);
+            //Move_Forward(sensor_data, 50, distTraveled);
+            //distTraveled = distTraveled + 30;
 
     }
 

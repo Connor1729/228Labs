@@ -5,44 +5,53 @@ void Move_Forward(oi_t *sensor, int centimeters, double sum){
  bool dir;
  int distanceToTravel = centimeters * 10;
  oi_setWheels(500, 500); // move forward; full speed
- while (sum < distanceToTravel) {
+ while ((int)sum < distanceToTravel) {
      oi_update(sensor);
      if(sensor->bumpLeft)
      {
         dir = false;
         move_back(sensor, dir, sum, centimeters);
+        break;
      }
      else if(sensor->bumpRight)
      {
          dir = true;
          move_back(sensor, dir, sum, centimeters);
+         break;
      }
      else if(sensor->cliffLeft)
      {
          dir = false;
          move_back(sensor, dir, sum, centimeters);
+         break;
      }
      else if(sensor->cliffRight)
      {
          dir = true;
          move_back(sensor, dir, sum, centimeters);
+         break;
      }
      else if(sensor->cliffFrontLeft)
      {
          dir = false;
          move_back(sensor, dir, sum, centimeters);
+         break;
      }
      else if(sensor->cliffFrontRight)
      {
          dir = true;
          move_back(sensor, dir, sum, centimeters);
+         break;
      }
      sum += sensor->distance;
  }
  oi_setWheels(0, 0); // stop
 
-
  }
+
+
+
+
 
 void turn_clockwise(oi_t *sensor, int degrees){
 
@@ -77,7 +86,7 @@ void move_back(oi_t *sensor, bool direction, double curSum, int curCent){ //fals
     oi_update(sensor);
 
     oi_setWheels(-500, -500);
-    for( i = 0; i <4; i++){
+    for( i = 0; i <5; i++){
         oi_update(sensor);
     }
     oi_setWheels(0, 0);
@@ -91,7 +100,7 @@ void move_back(oi_t *sensor, bool direction, double curSum, int curCent){ //fals
         }
 
     oi_setWheels(500, 500);
-      for(i=0;i<10;i++){
+      for(i=0;i<8;i++){
            oi_update(sensor);
        }
       oi_setWheels(0, 0);
@@ -103,7 +112,7 @@ void move_back(oi_t *sensor, bool direction, double curSum, int curCent){ //fals
         turn_clockwise(sensor, 90);
      }
 
-    double sumToReturn = curSum - 50;
+    double sumToReturn = curSum - 8;
 
     Move_Forward(sensor, curCent, sumToReturn);
 }
@@ -126,7 +135,7 @@ void Move_Backward(oi_t *sensor, int centimeters, double sum){
          dir = true;
          move_back(sensor, dir, sum, centimeters);
      }
-     else if(sensor->cliffLeft)
+     /*else if(sensor->cliffLeft)
           {
               dir = false;
               move_back(sensor, dir, sum, centimeters);
@@ -145,7 +154,7 @@ void Move_Backward(oi_t *sensor, int centimeters, double sum){
           {
               dir = true;
               move_back(sensor, dir, sum, centimeters);
-          }
+          }*/
      sum += sensor->distance;
  }
  oi_setWheels(0, 0); // stop

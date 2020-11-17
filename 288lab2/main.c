@@ -11,7 +11,9 @@ int main(void) {
     oi_t *sensor_data = oi_alloc();
     oi_init(sensor_data);
 
-    Move_Forward(sensor_data, 200, s1);
+    Move_Forward(sensor_data, 100, s1);
+    Move_Forward(sensor_data, 50, s1);
+    Move_Forward(sensor_data, 50, s1);
 
 /*
      Move_Forward(sensor_data, 50, s1);
