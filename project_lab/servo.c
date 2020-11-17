@@ -41,14 +41,18 @@ int servo_move(float degrees)
      int degrees2 = degrees;
 
  //int  miliseconds = (.0056*degrees)+1;
- int clockticks = (-128*degrees)+319000;
+ int clockticks = (-128*degrees)+319000; //set new position for serbo
 // 32000- clockcycles = prescale/match register
+ //adjust prescale register value
  int prescale = clockticks;
  prescale = prescale>>16;
+ //adjust match register value
  int match = clockticks;
  match = match & 0xFFFF;
+ //set prescale and match values
  TIMER1_TBPMR_R = prescale;
  TIMER1_TBMATCHR_R = match;
+
  char toprint[100];
  snprintf(toprint,sizeof(toprint),"%.2f", degrees);
 lcd_printf(toprint);
