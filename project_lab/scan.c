@@ -16,9 +16,13 @@
 #include "ping.h"
 #include "open_interface.h"
 #include "movement.h"
+
 int callCount;
-void scan_read(int angle){
+
+void scan_read(int angle)
+{
     int tempDegrees = 0;
+
     //initialize the various systems
     curWidth = 0;
     adc_init();
@@ -27,12 +31,13 @@ void scan_read(int angle){
     timer_init();
     cyBot_uart_init();
     objCount = 0;
-    char curdata[100];
     degrees = 0;
+
     if(callCount != 0)
     {
         degrees = 180;
     }
+
     //init sensor
     oi_t *sensor_data = oi_alloc();
     oi_init(sensor_data);
@@ -73,14 +78,12 @@ void scan_read(int angle){
 
 
 
-        timer_waitMillis(100); //1/10 of a second
+        timer_waitMillis(150); //1/10 of a second
         degrees = degrees + 2; //increment degrees by 2
         curWidth = curWidth + 2; //increment width by 2
 
         }
 servo_move(0);
-
-
 }
 
 void sendString(char *str) //send strings to putty
@@ -90,15 +93,8 @@ void sendString(char *str) //send strings to putty
     {
         cyBot_sendByte(str[i]);
     }
-    /*char *ptr;
-    ptr = str;
-    while(*ptr != '\0')
-    {
-        cyBot_sendByte(*ptr++);
-    }*/
     cyBot_sendByte('\n');
     cyBot_sendByte('\r');
-
 }
 
 

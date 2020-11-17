@@ -5,22 +5,14 @@ void Move_Forward(oi_t *sensor, int centimeters, double sum){
  bool dir;
  int distanceToTravel = centimeters * 10;
  oi_setWheels(500, 500); // move forward; full speed
-<<<<<<< HEAD
+
  while ((int)sum < distanceToTravel) {
-=======
- while (sum < distanceToTravel) { //move forward while sum is less distance
->>>>>>> 1d317c984cc175dca56b03636e7f9e7d8865ad1d
      oi_update(sensor);
      if(sensor->bumpLeft) //detects bump on left
      {
-<<<<<<< HEAD
-        dir = false;
-        move_back(sensor, dir, sum, centimeters);
-        break;
-=======
         dir = false; //false means it will go around it to the right
         move_back(sensor, dir, sum, centimeters); //moves robot back and goes around the object
->>>>>>> 1d317c984cc175dca56b03636e7f9e7d8865ad1d
+        break;
      }
      else if(sensor->bumpRight) //detects bump on right
      {
@@ -58,15 +50,11 @@ void Move_Forward(oi_t *sensor, int centimeters, double sum){
 
  }
 
-<<<<<<< HEAD
-
 
 
 
 void turn_clockwise(oi_t *sensor, int degrees){
-=======
-void turn_clockwise(oi_t *sensor, int degrees){ //turn robot clockwise
->>>>>>> 1d317c984cc175dca56b03636e7f9e7d8865ad1d
+
 
 
      double sum = 0;
@@ -97,14 +85,8 @@ void turn_cclockwise(oi_t *sensor, int degrees){ //turn robot counter clockwise
 void move_back(oi_t *sensor, bool direction, double curSum, int curCent){ //false is left, true is right
     int i;
     oi_update(sensor);
-
-<<<<<<< HEAD
     oi_setWheels(-500, -500);
     for( i = 0; i <5; i++){
-=======
-    oi_setWheels(-500, -500); //moves robot backward
-    for( i = 0; i <4; i++){
->>>>>>> 1d317c984cc175dca56b03636e7f9e7d8865ad1d
         oi_update(sensor);
     }
     oi_setWheels(0, 0); //stop
@@ -117,13 +99,9 @@ void move_back(oi_t *sensor, bool direction, double curSum, int curCent){ //fals
              turn_cclockwise(sensor, -90);
         }
 
-<<<<<<< HEAD
     oi_setWheels(500, 500);
       for(i=0;i<8;i++){
-=======
-    oi_setWheels(500, 500); //move forward
-      for(i=0;i<10;i++){
->>>>>>> 1d317c984cc175dca56b03636e7f9e7d8865ad1d
+
            oi_update(sensor);
        }
       oi_setWheels(0, 0); //stop
