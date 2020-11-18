@@ -34,12 +34,13 @@ int main(void) {
     lcd_init();
     timer_init();
     cyBot_uart_init();
+    servo_init();
 
     oi_t *sensor_data = oi_alloc();
     oi_init(sensor_data);
 
 
-    bool deliveredPackage = false;
+    deliveredPackage = false;
 
     double distTraveled = 0;
     //struct cybotObject emptyObjs[10];
@@ -56,6 +57,7 @@ int main(void) {
     {
 
         scan_read(360);
+        timer_waitMillis(100);
 
         char stringToSend[100];
         int j;
@@ -98,6 +100,8 @@ int main(void) {
                         smallestobjidx2 = j;
                     }
                 }
+
+
 
             }
             timer_waitMillis(100);
@@ -156,18 +160,29 @@ int main(void) {
                     turn_cclockwise(sensor_data, -(270 - angleToTurn));
                 }
 
-                timer_waitMillis(100);
+
                 distanceToMove = (scanObjs[smallestobjidx].curpdistance + scanObjs[smallestobjidx2].curpdistance)/2; //so dont bump and cause move things
 
-                Move_Forward(sensor_data, distanceToMove - 5, 0);
                 deliveredPackage = true;
+                timer_waitMillis(100);
+                Move_Forward(sensor_data, distanceToMove - 5, 0);
+                break;
+
 
             }
+            else
+            {
+                timer_waitMillis(100);
+                turn_clockwise(sensor_data, 180);
+            }
+
         }
         else
         {
+            timer_waitMillis(100);
             turn_clockwise(sensor_data, 180);
         }
+
             //else
             //{
                 //clear the array of objects we scanned
@@ -177,7 +192,7 @@ int main(void) {
            // }*/
 
 
-
+            timer_waitMillis(100);
             Move_Forward(sensor_data, 50, distTraveled);
 
 

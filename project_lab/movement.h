@@ -3,6 +3,8 @@
 #include "lcd.h"
 #include "resetSimulation.h"
 
+bool deliveredPackage;
+
 void Move_Forward(oi_t *sensor, int centimeters, double sum);
 void turn_clockwise(oi_t *sensor, int degrees);
 void turn_cclockwise(oi_t *sensor, int degrees);

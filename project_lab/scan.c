@@ -19,17 +19,14 @@
 
 int callCount;
 
+
 void scan_read(int angle)
 {
     int tempDegrees = 0;
 
     //initialize the various systems
     curWidth = 0;
-    adc_init();
-    ping_init();
-    lcd_init();
-    timer_init();
-    cyBot_uart_init();
+
     objCount = 0;
     degrees = 0;
 
@@ -42,19 +39,22 @@ void scan_read(int angle)
     oi_t *sensor_data = oi_alloc();
     oi_init(sensor_data);
 
-    servo_init();
+    unsigned int initDegree = 311000; //0 degrees = 311,000. 180 degrees = 288,000
+    TIMER1_TBPMR_R = initDegree >> 16;
+    TIMER1_TBMATCHR_R = initDegree;
 
         while(degrees<=angle){ //moves servo angle degrees
-          if(degrees < 180) //rotates to 180 degrees
+          if(degrees <= 180) //rotates to 180 degrees
           {
               servo_move(degrees);
           }
-          else if(degrees == 180) //at 180 it will rotate the bot to make a 360 scan
+          else if(degrees == 182) //at 181 it will rotate the bot to make a 360 scan
           {
               turn_clockwise(sensor_data, 180);
           }
-          else if(degrees > 180) //scan the second 180 degrees
+          else if(degrees > 182) //scan the second 180 degrees
           {
+
               tempDegrees = degrees;
               servo_move(tempDegrees - 180);
           }
@@ -83,7 +83,6 @@ void scan_read(int angle)
         curWidth = curWidth + 2; //increment width by 2
 
         }
-servo_move(0);
 }
 
 void sendString(char *str) //send strings to putty

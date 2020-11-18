@@ -75,7 +75,7 @@ void ping_read(void) {
     sprintf(str, " Degrees: %d\n Width: %d\nDistance: %.0f\nOverflows: %d\n",degrees, curWidth, distance, overflow_count);
     //prints out string of info
 
-    if(sqrt((2*pow(distance, 2)) - (2*distance*distance*cos(curWidth/57.2958))) > 1) //linear width greater than 1 add values to struct
+    if(sqrt((2*pow(distance, 2)) - (2*distance*distance*cos(curWidth/57.2958))) > 3.5) //linear width greater than 1 add values to struct
     {
         //places values in our struct
         scanObjs[objCount].width = curWidth;
